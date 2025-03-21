@@ -1,0 +1,399 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: -0.3px;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    height: 60px;
+    width: 100%;
+}
+
+header.scroll {
+    border-bottom: 1px solid rgba(0, 27, 55, 0.1);
+    background: #fff;
+    height: 60px;
+    width: 100%;
+}
+
+header .inner {
+    position: relative;
+    margin: 0 auto;
+    width: 1140px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+
+header .inner>h1.logo {
+    height: 18px;
+    display: flex;
+    align-items: center;
+}
+
+header .inner>h1.logo>svg {
+    width: auto;
+    height: 20px;
+}
+
+header .inner>ul.headMenuList {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+header .inner>ul.headMenuList>ul {
+    display: flex;
+    align-items: center;
+}
+
+header .inner>ul.headMenuList>li {
+    margin-left: 4px;
+    display: flex;
+}
+
+header .inner>ul.headMenuList>li>a {
+    color: #4e5968;
+    font: normal 15px/1 "SpoqaHanSansNeo-Regular";
+    padding: 12px 10px;
+    border-radius: 6px;
+}
+
+header .inner>ul.headMenuList>li>a:hover {
+    background: #f0f0f3;
+}
+
+header .inner>ul.headMenuList>ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+}
+
+header .inner>ul.headMenuList>ul>li {
+    display: flex;
+}
+
+header .inner>ul.headMenuList>ul>li>a {
+    color: #d1d6db;
+    font: normal 15px/1 "SpoqaHanSansNeo-Regular";
+    padding: 12px 10px;
+    border-radius: 6px;
+}
+
+header .inner>ul.headMenuList>ul>li>a.select {
+    color: #4e5968;
+}
+
+header .inner>ul.headMenuList>ul>span.bar {
+    display: flex;
+    width: 1px;
+    height: 15px;
+    background: #d1d6db;
+    margin: 0 5px;
+}
+
+main {
+    position: relative;
+}
+
+section#mainPage1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../image/new_main.png");
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+section#mainPage1 .gradient {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(180deg, white 0%, white 59px, rgba(255, 255, 255, 0) 100%);
+}
+
+section#mainPage1 .content {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    margin-top: 170px;
+    text-align: center;
+}
+
+section#mainPage1 .content>h2 {
+    font: bold 65px/1.5 "SpoqaHanSansNeo-Regular";
+    margin-bottom: 45px;
+}
+
+section#mainPage1 .content>span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#mainPage1 .content>span>button {
+    outline: none;
+    border: none;
+    margin: 0 5px;
+    background: rgba(0, 12, 30, 0.8);
+    border-radius: 6px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#mainPage1 .content>span>button>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#mainPage1 .content>span>button>a>img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+section#mainPage1 .content>span>button>a>span {
+    color: #fff;
+    letter-spacing: 0px;
+    font: bold 15px/1 "SpoqaHanSansNeo-Regular";
+}
+
+#mainPage2 {
+    text-align: center;
+    padding: 200px 0;
+    color: #191f28;
+    background: #f9fafb;
+    font: bold 30px/1.7 "SpoqaHanSansNeo-Regular";
+}
+
+#mainPage3 {
+    position: relative;
+    width: 100%;
+    padding: 250px 0 165px 0;
+    background: #fff;
+}
+
+#mainPage3>div.inner {
+    position: relative;
+    margin: 0 auto;
+    width: 1140px;
+    height: 1272px;
+    padding: 0 50px;
+}
+
+.loadAni {
+    opacity: 1 !important;
+    margin-top: 0 !important;
+}
+
+#mainPage3 > div.inner .contentTxt,
+#mainPage3 > div.inner .contentImage,
+#mainPage3 > div.inner .contentabout {
+    position: relative;
+    opacity: 0;
+    margin-top: 100px;
+    transition: opacity 0.8s ease-in-out, margin-top 1.5s ease-in-out;
+}
+
+#mainPage3>div.inner .contentTxt>h2 {
+    color: #3182f6;
+    font: bold 25px/1 "SpoqaHanSansNeo-Regular";
+    margin-bottom: 40px;
+}
+
+#mainPage3>div.inner .contentTxt>p {
+    color: #191f28;
+    font: bold 45px/1.5 "SpoqaHanSansNeo-Regular";
+}
+
+#mainPage3>div.inner .contentImage {
+    position: relative;
+}
+
+#mainPage3>div.inner .contentImage .rightImage {
+    width: 600px;
+    height: 936px;
+    position: absolute;
+    top: -320px;
+    right: -104px;
+}
+
+#mainPage3>div.inner .contentImage .rightImage>img:nth-of-type(1) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 57%;
+    height: auto;
+    transform: translate3d(-50%, -50%, 0);
+    border-radius: 22px;
+}
+
+#mainPage3>div.inner .contentImage .leftImage {
+    width: 600px;
+    height: 936px;
+    position: absolute;
+    bottom: -1000px;
+    left: -104px;
+}
+
+#mainPage3>div.inner .contentImage .leftImage>img:nth-of-type(1) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 57%;
+    height: auto;
+    transform: translate3d(-50%, -50%, 0);
+    border-radius: 22px;
+}
+
+#mainPage3>div.inner .contentImage .rightImage>img:nth-of-type(2),
+#mainPage3>div.inner .contentImage .leftImage>img:nth-of-type(2) {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#mainPage3>div.inner .contentabout {
+    position: absolute;
+    right: 30px;
+    bottom: 166px;
+    color: rgb(51, 61, 75);
+    font: bold 22px/1.5 "SpoqaHanSansNeo-Regular";
+}
+
+#mainPage4 {
+    position: relative;
+    height: 800px;
+    background-image: url("../image/section2_4_big.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font: bold 85px/1 "SpoqaHanSansNeo-Regular";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+#mainPage4 .sideBar1,
+#mainPage4 .sideBar2 {
+    position: absolute;
+    top: 0;
+    width: calc((100vw - 1040px) / 2);
+    height: 100%;
+    background: rgba(255, 255, 255, 1);
+    z-index: 1;
+}
+
+#mainPage4 .sideBar1 {
+    left: 0;
+}
+
+#mainPage4 .sideBar2 {
+    right: 0;
+}
+
+footer {
+    background: #191f28;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .inner {
+    margin: 0 auto;
+    width: 1064px;
+    padding: 80px 67px;
+}
+
+footer .inner .footerMenu {
+    display: flex;
+    margin-bottom: 30px;
+}
+footer .inner .footerMenu>ul {
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+}
+footer .inner .footerMenu>ul:last-of-type {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+footer .inner .footerMenu>ul>li>span {
+    color: #fff;
+    font: bold 14px/1 "SpoqaHanSansNeo-Regular";
+    margin-bottom: 15px;
+    display: flex;
+}
+footer .inner .footerMenu>ul>li>a {
+    color: #6b7684;
+    font: normal 14px/1 "SpoqaHanSansNeo-Regular";
+    display: flex;
+    padding: 5px 0;
+}
+
+footer .inner>address {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+footer .inner>address>h4 {
+    color: #fff;
+    font: bold 14px/1 "SpoqaHanSansNeo-Regular";
+    display: flex;
+    margin-bottom: 15px;
+}
+footer .inner>address>p {
+    color: #b1b7be;
+    font: normal 12px/1.5 "SpoqaHanSansNeo-Regular";
+}
+
+footer .inner .term {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+footer .inner .term>li {
+    margin-right: 40px;
+}
+footer .inner .term>li>a {
+    color: #6b7684;
+    display: flex;
+    font: normal 14px/1 "SpoqaHanSansNeo-Regular";
+}
+footer .inner .portal {
+    display: flex;
+}
+footer .inner .portal>li {margin-right: 10px;
+}
